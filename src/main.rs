@@ -89,6 +89,6 @@ async fn main() {
     // Shards will automatically attempt to reconnect, and will perform exponential backoff until
     // it reconnects.
     if let Err(why) = client.start().await {
-        println!("Client error: {why:?}");
+        println!("Discord client experienced an error: {why:?}");
     }
 }
